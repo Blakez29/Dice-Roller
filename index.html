@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Dice Role</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id="title">
+        <img id="logo" src="https://lowendbox.com/wp-content/uploads/2023/10/bg3.png" />
+        <h1 id="text">Dice Roller</h1>
+    </header>
+    <div>
+        <label for="min">Min: </label>
+        <input type="number" name="min" id="min" min="1">
+    </div>
+    <div>
+        <img id="arrow" src="https://www.freeiconspng.com/uploads/white-down-arrow-png-2.png">
+        <img id="die" src="dice\twenty.jpg">
+    </div>
+    <div>
+        <label for="max">Max: </label>
+        <input type="number" name="max" id="max" max="20">
+    </div>
+    <br>
+    <div id="roll">
+        <button onclick="diceRoll()">ROLL</button>
+    </div>
+    <div id="clear">
+        <button onclick="clearOut()">CLEAR</button>
+    </div>
+    <script src="./index.js" defer></script>
+</body>
+</html>

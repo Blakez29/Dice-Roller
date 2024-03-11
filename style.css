@@ -1,0 +1,40 @@
+*{
+    background-color: rgba(47,57,67,255);
+    color:antiquewhite
+}
+#title{
+    display: flex;
+}
+
+#logo{
+    max-height: 200px;
+}
+
+#text{
+    align-self:center;
+    font-size: 40px;
+    position: absolute;
+    margin-left: 160px;
+}
+
+#arrow{
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+#die{
+    position: absolute;
+    margin-left: 150px;
+    height: 250px;
+}
+input {
+    background-color: antiquewhite;
+    color:black
+}
+#roll button{
+    width: 215px;
+}
+#clear button{
+    width: 215px;
+}
