@@ -90,3 +90,40 @@ function clearOut(){
     document.getElementById('min').value = '';
     document.getElementById('die').src = 'dice/twenty.jpg';
 }
+
+function customChar(){
+    raceArr = ['Elf', 'Tiefling', 'Drow', 'Human', 'Githyanki', 'Dwarf', 'Half-Elf', 'Halfing', 'Gnome', 'Dragonborn', 'Half-Orc']
+    subraceArr =[['High Elf', 'Wood Elf'], 
+                ['Asmodeus Tiefling', 'Mephistopheles Tiefling', 'Zariel Tiefling'],
+                ['Lolth-Sworn Drow', 'Seldarine Drow'],
+                ['none'],
+                ['none'],
+                ['Gold Dwarf', 'Shield Dwarf', 'Duergar'],
+                ['High Half-Elf', 'Wood Half-Elf', 'Drow Half-Elf'],
+                ['Lightfoot Halfling', 'Strongheart Halfling'],
+                ['Rock Gnome', 'Forest Gnome', 'Deep Gnome'],
+                ['Black Dragonborn', 'Blue Dragonborn', 'Copper Dragonborn', 'Gold Dragonborn', 'Green Dragonborn', 'Red Dragonborn', 'Brass Dragonborn', 'Bronze Dragonborn', 'Silver Dragonborn', 'White Dragonborn'],
+                ['none']]
+    race = Math.floor(Math.random() * raceArr.length);
+    subrace = Math.floor(Math.random() * subraceArr[race].length);
+    document.getElementById('race').innerHTML = `Race: ${raceArr[race]}`;
+    document.getElementById('subrace').innerHTML = `Subrace: ${subraceArr[race][subrace]}`;
+
+    classArr = ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']
+    subclassArr = [['Wildheart', 'Berserker', 'Wild Magic'],
+                ['Lore', 'Valour', 'Swords'],
+                ['Life', 'Light', 'Trickery', 'Knowledge', 'Nature', 'Tempest', 'War'],
+                ['Circle of the Land', 'Circle of the Moon', 'Circle of Spores'],
+                ['Battle Master', 'Eldritch Knight', 'Champion'],
+                ['Way of the Four Elements', 'Way of the Open Hand', 'Way of the Shadow'],
+                ['Oath of the Ancients', 'Oath of Devotion', 'Oath of Vengeance'],
+                ['Beast Master', 'Gloom Stalker', 'Hunter'],
+                ['Thief', 'Arcane Trickster', 'Assassin'],
+                ['Wild Magic', 'Draconic Bloodline', 'Storm Sorcery'],
+                ['The Fiend', 'The Great Old One', 'The Archfey'],
+                ['Abjuration', 'Evocation', 'Necromancy', 'Conjuration', 'Enchantment', 'Divination', 'Illusion', 'Transmutation']];
+    class_ = Math.floor(Math.random() * classArr.length);
+    subclass = Math.floor(Math.random() * subclassArr[class_].length);
+    document.getElementById('class').innerHTML = `Class: ${classArr[class_]}`;
+    document.getElementById('subclass').innerHTML = `Subclass: ${subclassArr[class_][subclass]}`;
+}

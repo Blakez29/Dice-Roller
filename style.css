@@ -1,6 +1,7 @@
 *{
     background-color: rgba(47,57,67,255);
-    color:antiquewhite
+    color:antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #title{
     display: flex;
@@ -34,7 +35,20 @@ input {
 }
 #roll button{
     width: 215px;
+    height: 40px;
 }
 #clear button{
     width: 215px;
+    height: 40px;
+}
+#custom{
+    float: right;
+    border: 3px solid antiquewhite;
+    margin-right: 100px;
+    padding: 20px;
+}
+#custom button{
+    width: 250px;
+    height: 125px;
+    font-size: 30px;
 }
