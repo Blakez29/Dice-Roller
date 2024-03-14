@@ -92,6 +92,10 @@ function clearOut(){
 }
 
 function customChar(){
+    document.getElementById('race').innerHTML = `Race: ???`
+    document.getElementById('subrace').innerHTML = `Subrace: ???`
+    document.getElementById('class').innerHTML = `Class: ???`
+    document.getElementById('subclass').innerHTML = `Subclass: ???`
     raceArr = ['Elf', 'Tiefling', 'Drow', 'Human', 'Githyanki', 'Dwarf', 'Half-Elf', 'Halfing', 'Gnome', 'Dragonborn', 'Half-Orc']
     subraceArr =[['High Elf', 'Wood Elf'], 
                 ['Asmodeus Tiefling', 'Mephistopheles Tiefling', 'Zariel Tiefling'],
@@ -106,8 +110,8 @@ function customChar(){
                 ['none']]
     race = Math.floor(Math.random() * raceArr.length);
     subrace = Math.floor(Math.random() * subraceArr[race].length);
-    document.getElementById('race').innerHTML = `Race: ${raceArr[race]}`;
-    document.getElementById('subrace').innerHTML = `Subrace: ${subraceArr[race][subrace]}`;
+    sleep(500).then(() => {document.getElementById('race').innerHTML = `Race: ${raceArr[race]}`});
+    sleep(1000).then(() => {document.getElementById('subrace').innerHTML = `Subrace: ${subraceArr[race][subrace]}`});
 
     classArr = ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']
     subclassArr = [['Wildheart', 'Berserker', 'Wild Magic'],
@@ -124,6 +128,10 @@ function customChar(){
                 ['Abjuration', 'Evocation', 'Necromancy', 'Conjuration', 'Enchantment', 'Divination', 'Illusion', 'Transmutation']];
     class_ = Math.floor(Math.random() * classArr.length);
     subclass = Math.floor(Math.random() * subclassArr[class_].length);
-    document.getElementById('class').innerHTML = `Class: ${classArr[class_]}`;
-    document.getElementById('subclass').innerHTML = `Subclass: ${subclassArr[class_][subclass]}`;
+    sleep(1500).then(() => {document.getElementById('class').innerHTML = `Class: ${classArr[class_]}`});
+    sleep(2000).then(() => {document.getElementById('subclass').innerHTML = `Subclass: ${subclassArr[class_][subclass]}`});
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
 }
