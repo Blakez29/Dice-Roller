@@ -52,10 +52,12 @@ label{
     float: right;
     border: 3px solid antiquewhite;
     margin-right: 100px;
-    padding: 20px 50px;
+    width: 350px;
+    padding: 10px 25px;
 }
 #custom button{
     width: 250px;
     height: 125px;
     font-size: 30px;
+    
 }

@@ -96,18 +96,19 @@ function customChar(){
     document.getElementById('subrace').innerHTML = `Subrace: ???`
     document.getElementById('class').innerHTML = `Class: ???`
     document.getElementById('subclass').innerHTML = `Subclass: ???`
+    document.getElementById('backG').innerHTML = `Background: ???`
     raceArr = ['Elf', 'Tiefling', 'Drow', 'Human', 'Githyanki', 'Dwarf', 'Half-Elf', 'Halfing', 'Gnome', 'Dragonborn', 'Half-Orc']
     subraceArr =[['High Elf', 'Wood Elf'], 
                 ['Asmodeus Tiefling', 'Mephistopheles Tiefling', 'Zariel Tiefling'],
                 ['Lolth-Sworn Drow', 'Seldarine Drow'],
-                ['none'],
-                ['none'],
+                ['N/A'],
+                ['N/A'],
                 ['Gold Dwarf', 'Shield Dwarf', 'Duergar'],
                 ['High Half-Elf', 'Wood Half-Elf', 'Drow Half-Elf'],
                 ['Lightfoot Halfling', 'Strongheart Halfling'],
                 ['Rock Gnome', 'Forest Gnome', 'Deep Gnome'],
                 ['Black Dragonborn', 'Blue Dragonborn', 'Copper Dragonborn', 'Gold Dragonborn', 'Green Dragonborn', 'Red Dragonborn', 'Brass Dragonborn', 'Bronze Dragonborn', 'Silver Dragonborn', 'White Dragonborn'],
-                ['none']]
+                ['N/A']]
     race = Math.floor(Math.random() * raceArr.length);
     subrace = Math.floor(Math.random() * subraceArr[race].length);
     sleep(500).then(() => {document.getElementById('race').innerHTML = `Race: ${raceArr[race]}`});
@@ -131,6 +132,9 @@ function customChar(){
     sleep(1500).then(() => {document.getElementById('class').innerHTML = `Class: ${classArr[class_]}`});
     sleep(2000).then(() => {document.getElementById('subclass').innerHTML = `Subclass: ${subclassArr[class_][subclass]}`});
 
+    backArr = ['Acolyte', 'Charlatan', 'Criminal', 'Entertainer', 'Folk Hero', 'Guild Artisan', 'Noble', 'Outlander', 'Sage', 'Soldier', 'Urchin'];
+    back = Math.floor(Math.random() * backArr.length);
+    sleep(2500).then(() => {document.getElementById('backG').innerHTML = `Background: ${backArr[back]}`});
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
       }
