@@ -27,10 +27,17 @@ p{
     margin-left: 100px;
 }
 
-#die{
+figure{
     position: absolute;
-    margin-left: 150px;
+    margin-left: 300px;
     height: 250px;
+    padding-top: 0;
+    margin-top: 0;
+}
+figcaption{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
 }
 input {
     background-color: antiquewhite;
