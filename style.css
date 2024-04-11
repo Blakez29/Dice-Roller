@@ -74,10 +74,7 @@ label{
     border: 3px solid antiquewhite;
     width: 400px;
 }
-#dice{
-    display: flex;
-    align-self:stretch;
-}
+
 #other button{
     width: 50px;
 }
@@ -94,3 +91,10 @@ nav button{
     width: 200px;
     height: 50px;
 }
+
+#other #roll2{
+    width: 400px;
+    height: 80px;
+    font-size: 30px;
+}
+

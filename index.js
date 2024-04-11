@@ -169,16 +169,217 @@ function choiceRoll(){
     document.getElementById('custom').style.display = 'none';
     document.getElementById('other').style.display = 'none';
     document.getElementById('choice').style.display = 'block';
+    document.getElementById('choiceButt').style.backgroundColor = 'antiquewhite';
+    document.getElementById('choiceButt').style.color = 'black';
+    document.getElementById('randomButt').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('randomButt').style.color = 'antiquewhite';
+    document.getElementById('otherButt').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('otherButt').style.color = 'antiquewhite';
 }
 
 function randomChar(){
     document.getElementById('choice').style.display = 'none';
     document.getElementById('other').style.display = 'none';
     document.getElementById('custom').style.display = 'block';
+    document.getElementById('randomButt').style.backgroundColor = 'antiquewhite';
+    document.getElementById('randomButt').style.color = 'black';
+    document.getElementById('choiceButt').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('choiceButt').style.color = 'antiquewhite';
+    document.getElementById('otherButt').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('otherButt').style.color = 'antiquewhite';
 }
 
 function otherDice(){
     document.getElementById('choice').style.display = 'none';
     document.getElementById('other').style.display = 'block';
     document.getElementById('custom').style.display = 'none';
+    document.getElementById('otherButt').style.backgroundColor = 'antiquewhite';
+    document.getElementById('otherButt').style.color = 'black';
+    document.getElementById('choiceButt').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('choiceButt').style.color = 'antiquewhite';
+    document.getElementById('randomButt').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('randomButt').style.color = 'antiquewhite';
+}
+
+function dFour(){
+    document.getElementById('d4').style.backgroundColor = 'antiquewhite';
+    document.getElementById('d4').style.color = 'black';
+    document.getElementById('d6').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d6').style.color = 'antiquewhite';
+    document.getElementById('d8').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d8').style.color = 'antiquewhite';
+    document.getElementById('d10').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d10').style.color = 'antiquewhite';
+    document.getElementById('d12').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d12').style.color = 'antiquewhite';
+    document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d20').style.color = 'antiquewhite';
+}
+
+function dSix(){
+    document.getElementById('d6').style.backgroundColor = 'antiquewhite';
+    document.getElementById('d6').style.color = 'black';
+    document.getElementById('d4').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d4').style.color = 'antiquewhite';
+    document.getElementById('d8').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d8').style.color = 'antiquewhite';
+    document.getElementById('d10').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d10').style.color = 'antiquewhite';
+    document.getElementById('d12').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d12').style.color = 'antiquewhite';
+    document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d20').style.color = 'antiquewhite';
+}
+
+function dEight(){
+    document.getElementById('d8').style.backgroundColor = 'antiquewhite';
+    document.getElementById('d8').style.color = 'black';
+    document.getElementById('d6').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d6').style.color = 'antiquewhite';
+    document.getElementById('d4').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d4').style.color = 'antiquewhite';
+    document.getElementById('d10').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d10').style.color = 'antiquewhite';
+    document.getElementById('d12').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d12').style.color = 'antiquewhite';
+    document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d20').style.color = 'antiquewhite';
+}
+
+function dTen(){
+    document.getElementById('d10').style.backgroundColor = 'antiquewhite';
+    document.getElementById('d10').style.color = 'black';
+    document.getElementById('d6').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d6').style.color = 'antiquewhite';
+    document.getElementById('d8').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d8').style.color = 'antiquewhite';
+    document.getElementById('d4').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d4').style.color = 'antiquewhite';
+    document.getElementById('d12').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d12').style.color = 'antiquewhite';
+    document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d20').style.color = 'antiquewhite';
+}
+
+function dTwelve(){
+    document.getElementById('d12').style.backgroundColor = 'antiquewhite';
+    document.getElementById('d12').style.color = 'black';
+    document.getElementById('d6').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d6').style.color = 'antiquewhite';
+    document.getElementById('d8').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d8').style.color = 'antiquewhite';
+    document.getElementById('d10').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d10').style.color = 'antiquewhite';
+    document.getElementById('d4').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d4').style.color = 'antiquewhite';
+    document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d20').style.color = 'antiquewhite';
+}
+
+function dTwenty(){
+    document.getElementById('d20').style.backgroundColor = 'antiquewhite';
+    document.getElementById('d20').style.color = 'black';
+    document.getElementById('d6').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d6').style.color = 'antiquewhite';
+    document.getElementById('d8').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d8').style.color = 'antiquewhite';
+    document.getElementById('d10').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d10').style.color = 'antiquewhite';
+    document.getElementById('d12').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d12').style.color = 'antiquewhite';
+    document.getElementById('d4').style.backgroundColor = 'rgba(47,57,67,255)';
+    document.getElementById('d4').style.color = 'antiquewhite';
+    document.getElementById('die2').style.visibility = 'visible';
+    document.getElementById('die2').src = 'dice/d20/twenty.jpg'
+}
+
+function otherRoll(){
+    document.getElementById('otherTitle').innerHTML = 'Rolling.';
+    sleep(400).then(() => {document.getElementById('otherTitle').innerHTML = 'Rolling..';})
+    sleep(800).then(() => {document.getElementById('otherTitle').innerHTML = 'Rolling...';})
+    sleep(1200).then(() => {document.getElementById('otherTitle').innerHTML = 'Done!';})
+    if(document.getElementById('d4').style.backgroundColor = 'antiquewhite'){
+
+    }
+    if(document.getElementById('d6').style.backgroundColor = 'antiquewhite'){
+
+    }
+    if(document.getElementById('d8').style.backgroundColor = 'antiquewhite'){
+
+    }
+    if(document.getElementById('d10').style.backgroundColor = 'antiquewhite'){
+
+    }
+    if(document.getElementById('d12').style.backgroundColor = 'antiquewhite'){
+
+    }
+    if(document.getElementById('d20').style.backgroundColor = 'antiquewhite'){
+        let answer = Math.floor(Math.random() * (20 + 1)) + 1;
+        let die = document.getElementById('die2');
+        switch(answer){
+            case 1:
+                sleep(1200).then(() => {die.src = 'dice/d20/one.jpg'});
+                break;
+            case 2:
+                sleep(1200).then(() => {die.src = 'dice/d20/two.jpg'});
+                break;
+            case 3:
+                sleep(1200).then(() => {die.src = 'dice/d20/three.jpg'});
+                break;
+            case 4:
+                sleep(1200).then(() => {die.src = 'dice/d20/four.jpg'});
+                break;
+            case 5:
+                sleep(1200).then(() => {die.src = 'dice/d20/five.jpg'});
+                break;
+            case 6:
+                sleep(1200).then(() => {die.src = 'dice/d20/six.jpg'});
+                break;
+            case 7:
+                sleep(1200).then(() => {die.src = 'dice/d20/seven.jpg'});
+                break;
+            case 8:
+                sleep(1200).then(() => {die.src = 'dice/d20/eight.jpg'});
+                break;
+            case 9:
+                sleep(1200).then(() => {die.src = 'dice/d20/nine.jpg'});
+                break;
+            case 10:
+                sleep(1200).then(() => {die.src = 'dice/d20/ten.jpg'});
+                break;
+            case 11:
+                sleep(1200).then(() => {die.src = 'dice/d20/eleven.jpg'});
+                break;
+            case 12:
+                sleep(1200).then(() => {die.src = 'dice/d20/twelve.jpg'});
+                break;
+            case 13:
+                sleep(1200).then(() => {die.src = 'dice/d20/thirteen.jpg'});
+                break;
+            case 14:
+                sleep(1200).then(() => {die.src = 'dice/d20/fourteen.jpg'});
+                break;
+            case 15:
+                sleep(1200).then(() => {die.src = 'dice/d20/fifteen.jpg'});
+                break;
+            case 16:
+                sleep(1200).then(() => {die.src = 'dice/d20/sixteen.jpg'});
+                break;
+            case 17:
+                sleep(1200).then(() => {die.src = 'dice/d20/seventeen.jpg'});
+                break;
+            case 18:
+                sleep(1200).then(() => {die.src = 'dice/d20/eighteen.jpg'});
+                break;
+            case 19:
+                sleep(1200).then(() => {die.src = 'dice/d20/nineteen.jpg'});
+                break;
+            case 20:
+                sleep(1200).then(() => {die.src = 'dice/d20/twenty.jpg'});
+                break;
+        }
+    }
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
 }

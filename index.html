@@ -12,9 +12,9 @@
         <h1 id="text">Dice Roller</h1>
     </header>
     <nav>
-        <button onclick="choiceRoll()">Choice Roll</button>
-        <button onclick="randomChar()">Random Character</button>
-        <button onclick="otherDice()">Other Dice</button>
+        <button id="choiceButt" onclick="choiceRoll()">Choice Roll</button>
+        <button id="randomButt" onclick="randomChar()">Random Character</button>
+        <button id="otherButt" onclick="otherDice()">Other Dice</button>
     </nav>
     <div id="custom">
         <center><button onclick="customChar()">Customize Character</button></center>
@@ -51,17 +51,19 @@
     </div>
     </div>
     <div id="other">
-        <h1>Other Dice</h1>
+        <h1 id="otherTitle">Roll to Start</h1>
         <center>
-        <button>D4</button>
-        <button>D6</button>
-        <button>D8</button>
-        <button>D10</button>
-        <button>D12</button>
-        <button>D20</button>
+        <button id="d4" onclick="dFour()">D4</button>
+        <button id="d6" onclick="dSix()">D6</button>
+        <button id="d8" onclick="dEight()">D8</button>
+        <button id="d10" onclick="dTen()">D10</button>
+        <button id="d12" onclick="dTwelve()">D12</button>
+        <button id="d20" onclick="dTwenty()">D20</button>
         </center>
         <br>
-        <img id="die2" src="dice/d20/twenty.jpg">
+        <center><img id="die2" src="dice/d20/twenty.jpg"></center>
+        <br>
+        <button id="roll2" onclick="otherRoll()">ROLL</button>
     </div>
     <script src="./index.js" defer></script>
 </body>
