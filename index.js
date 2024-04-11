@@ -31,64 +31,64 @@ function diceRoll(){
     sleep(1200).then(() => {document.getElementById('cap').innerHTML = 'Done!';})
     switch(answer){
         case 1:
-            sleep(1200).then(() => {die.src = 'dice/one.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/one.jpg'});
             break;
         case 2:
-            sleep(1200).then(() => {die.src = 'dice/two.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/two.jpg'});
             break;
         case 3:
-            sleep(1200).then(() => {die.src = 'dice/three.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/three.jpg'});
             break;
         case 4:
-            sleep(1200).then(() => {die.src = 'dice/four.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/four.jpg'});
             break;
         case 5:
-            sleep(1200).then(() => {die.src = 'dice/five.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/five.jpg'});
             break;
         case 6:
-            sleep(1200).then(() => {die.src = 'dice/six.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/six.jpg'});
             break;
         case 7:
-            sleep(1200).then(() => {die.src = 'dice/seven.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/seven.jpg'});
             break;
         case 8:
-            sleep(1200).then(() => {die.src = 'dice/eight.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/eight.jpg'});
             break;
         case 9:
-            sleep(1200).then(() => {die.src = 'dice/nine.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/nine.jpg'});
             break;
         case 10:
-            sleep(1200).then(() => {die.src = 'dice/ten.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/ten.jpg'});
             break;
         case 11:
-            sleep(1200).then(() => {die.src = 'dice/eleven.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/eleven.jpg'});
             break;
         case 12:
-            sleep(1200).then(() => {die.src = 'dice/twelve.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/twelve.jpg'});
             break;
         case 13:
-            sleep(1200).then(() => {die.src = 'dice/thirteen.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/thirteen.jpg'});
             break;
         case 14:
-            sleep(1200).then(() => {die.src = 'dice/fourteen.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/fourteen.jpg'});
             break;
         case 15:
-            sleep(1200).then(() => {die.src = 'dice/fifteen.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/fifteen.jpg'});
             break;
         case 16:
-            sleep(1200).then(() => {die.src = 'dice/sixteen.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/sixteen.jpg'});
             break;
         case 17:
-            sleep(1200).then(() => {die.src = 'dice/seventeen.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/seventeen.jpg'});
             break;
         case 18:
-            sleep(1200).then(() => {die.src = 'dice/eighteen.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/eighteen.jpg'});
             break;
         case 19:
-            sleep(1200).then(() => {die.src = 'dice/nineteen.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/nineteen.jpg'});
             break;
         case 20:
-            sleep(1200).then(() => {die.src = 'dice/twenty.jpg'});
+            sleep(1200).then(() => {die.src = 'dice/d20/twenty.jpg'});
             break;
     }
     function sleep(ms) {
@@ -99,7 +99,7 @@ function diceRoll(){
 function clearOut(){
     document.getElementById('max').value = '';
     document.getElementById('min').value = '';
-    document.getElementById('die').src = 'dice/twenty.jpg';
+    document.getElementById('die').src = 'dice/d20/twenty.jpg';
 }
 
 function customChar(){
