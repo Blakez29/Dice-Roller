@@ -214,6 +214,8 @@ function dFour(){
     document.getElementById('d12').style.color = 'antiquewhite';
     document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
     document.getElementById('d20').style.color = 'antiquewhite';
+    document.getElementById('die2').src = 'dice/d4/four.jpg'
+    document.getElementById('die2').style.visibility = 'visible';
 }
 
 function dSix(){
@@ -229,6 +231,8 @@ function dSix(){
     document.getElementById('d12').style.color = 'antiquewhite';
     document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
     document.getElementById('d20').style.color = 'antiquewhite';
+    document.getElementById('die2').style.visibility = 'visible';
+    document.getElementById('die2').src = 'dice/d6/six.jpg'
 }
 
 function dEight(){
@@ -244,6 +248,8 @@ function dEight(){
     document.getElementById('d12').style.color = 'antiquewhite';
     document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
     document.getElementById('d20').style.color = 'antiquewhite';
+    document.getElementById('die2').style.visibility = 'visible';
+    document.getElementById('die2').src = 'dice/d8/eight.jpg'
 }
 
 function dTen(){
@@ -259,6 +265,8 @@ function dTen(){
     document.getElementById('d12').style.color = 'antiquewhite';
     document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
     document.getElementById('d20').style.color = 'antiquewhite';
+    document.getElementById('die2').style.visibility = 'visible';
+    document.getElementById('die2').src = 'dice/d10/ten.jpg'
 }
 
 function dTwelve(){
@@ -274,6 +282,8 @@ function dTwelve(){
     document.getElementById('d4').style.color = 'antiquewhite';
     document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
     document.getElementById('d20').style.color = 'antiquewhite';
+    document.getElementById('die2').style.visibility = 'visible';
+    document.getElementById('die2').src = 'dice/d12/twelve.jpg'
 }
 
 function dTwenty(){
@@ -295,26 +305,167 @@ function dTwenty(){
 
 function otherRoll(){
     document.getElementById('otherTitle').innerHTML = 'Rolling.';
-    sleep(400).then(() => {document.getElementById('otherTitle').innerHTML = 'Rolling..';})
-    sleep(800).then(() => {document.getElementById('otherTitle').innerHTML = 'Rolling...';})
-    sleep(1200).then(() => {document.getElementById('otherTitle').innerHTML = 'Done!';})
-    if(document.getElementById('d4').style.backgroundColor = 'antiquewhite'){
-
+    sleep(400).then(() => {document.getElementById('otherTitle').innerHTML = 'Rolling..';});
+    sleep(800).then(() => {document.getElementById('otherTitle').innerHTML = 'Rolling...';});
+    sleep(1200).then(() => {document.getElementById('otherTitle').innerHTML = 'Done!';});
+    
+    if(document.getElementById('d4').style.backgroundColor === 'antiquewhite'){
+        let answer = Math.floor(Math.random() * 4) + 1;
+        let die = document.getElementById('die2');
+        switch(answer){
+            case 1:
+                sleep(1200).then(() => {die.src = 'dice/d4/one.jpg'});
+                break;
+            case 2:
+                sleep(1200).then(() => {die.src = 'dice/d4/two.jpg'});
+                break;
+            case 3:
+                sleep(1200).then(() => {die.src = 'dice/d4/three.jpg'});
+                break;
+            case 4:
+                sleep(1200).then(() => {die.src = 'dice/d4/four.jpg'});
+                break;
     }
-    if(document.getElementById('d6').style.backgroundColor = 'antiquewhite'){
-
+    return;
     }
-    if(document.getElementById('d8').style.backgroundColor = 'antiquewhite'){
-
+    else if(document.getElementById('d6').style.backgroundColor === 'antiquewhite'){
+        let answer = Math.floor(Math.random() * 6) + 1;
+        let die = document.getElementById('die2');
+        switch(answer){
+            case 1:
+                sleep(1200).then(() => {die.src = 'dice/d6/one.jpg'});
+                break;
+            case 2:
+                sleep(1200).then(() => {die.src = 'dice/d6/two.jpg'});
+                break;
+            case 3:
+                sleep(1200).then(() => {die.src = 'dice/d6/three.jpg'});
+                break;
+            case 4:
+                sleep(1200).then(() => {die.src = 'dice/d6/four.jpg'});
+                break;
+            case 5:
+                sleep(1200).then(() => {die.src = 'dice/d6/five.jpg'});
+                break;
+            case 6:
+                sleep(1200).then(() => {die.src = 'dice/d6/six.jpg'});
+                break;
+        } 
+        return;
     }
-    if(document.getElementById('d10').style.backgroundColor = 'antiquewhite'){
-
+    else if(document.getElementById('d8').style.backgroundColor === 'antiquewhite'){
+        let answer = Math.floor(Math.random() * 8) + 1;
+        let die = document.getElementById('die2');
+        switch(answer){
+            case 1:
+                sleep(1200).then(() => {die.src = 'dice/d8/one.jpg'});
+                break;
+            case 2:
+                sleep(1200).then(() => {die.src = 'dice/d8/two.jpg'});
+                break;
+            case 3:
+                sleep(1200).then(() => {die.src = 'dice/d8/three.jpg'});
+                break;
+            case 4:
+                sleep(1200).then(() => {die.src = 'dice/d8/four.jpg'});
+                break;
+            case 5:
+                sleep(1200).then(() => {die.src = 'dice/d8/five.jpg'});
+                break;
+            case 6:
+                sleep(1200).then(() => {die.src = 'dice/d8/six.jpg'});
+                break;
+            case 7:
+                sleep(1200).then(() => {die.src = 'dice/d8/seven.jpg'});
+                break;
+            case 8:
+                sleep(1200).then(() => {die.src = 'dice/d8/eight.jpg'});
+                break;
+        }
+        return;
     }
-    if(document.getElementById('d12').style.backgroundColor = 'antiquewhite'){
-
+    else if(document.getElementById('d10').style.backgroundColor === 'antiquewhite'){
+        let answer = Math.floor(Math.random() * 10) + 1;
+        let die = document.getElementById('die2');
+        switch(answer){
+            case 1:
+                sleep(1200).then(() => {die.src = 'dice/d10/one.jpg'});
+                break;
+            case 2:
+                sleep(1200).then(() => {die.src = 'dice/d10/two.jpg'});
+                break;
+            case 3:
+                sleep(1200).then(() => {die.src = 'dice/d10/three.jpg'});
+                break;
+            case 4:
+                sleep(1200).then(() => {die.src = 'dice/d10/four.jpg'});
+                break;
+            case 5:
+                sleep(1200).then(() => {die.src = 'dice/d10/five.jpg'});
+                break;
+            case 6:
+                sleep(1200).then(() => {die.src = 'dice/d10/six.jpg'});
+                break;
+            case 7:
+                sleep(1200).then(() => {die.src = 'dice/d10/seven.jpg'});
+                break;
+            case 8:
+                sleep(1200).then(() => {die.src = 'dice/d10/eight.jpg'});
+                break;
+            case 9:
+                sleep(1200).then(() => {die.src = 'dice/d10/nine.jpg'});
+                break;
+            case 10:
+                sleep(1200).then(() => {die.src = 'dice/d10/ten.jpg'});
+                break;
+        }
+        return;
     }
-    if(document.getElementById('d20').style.backgroundColor = 'antiquewhite'){
-        let answer = Math.floor(Math.random() * (20 + 1)) + 1;
+    else if(document.getElementById('d12').style.backgroundColor === 'antiquewhite'){
+        let answer = Math.floor(Math.random() * 12) + 1;
+        let die = document.getElementById('die2');
+        switch(answer){
+            case 1:
+                sleep(1200).then(() => {die.src = 'dice/d12/one.jpg'});
+                break;
+            case 2:
+                sleep(1200).then(() => {die.src = 'dice/d12/two.jpg'});
+                break;
+            case 3:
+                sleep(1200).then(() => {die.src = 'dice/d12/three.jpg'});
+                break;
+            case 4:
+                sleep(1200).then(() => {die.src = 'dice/d12/four.jpg'});
+                break;
+            case 5:
+                sleep(1200).then(() => {die.src = 'dice/d12/five.jpg'});
+                break;
+            case 6:
+                sleep(1200).then(() => {die.src = 'dice/d12/six.jpg'});
+                break;
+            case 7:
+                sleep(1200).then(() => {die.src = 'dice/d12/seven.jpg'});
+                break;
+            case 8:
+                sleep(1200).then(() => {die.src = 'dice/d12/eight.jpg'});
+                break;
+            case 9:
+                sleep(1200).then(() => {die.src = 'dice/d12/nine.jpg'});
+                break;
+            case 10:
+                sleep(1200).then(() => {die.src = 'dice/d12/ten.jpg'});
+                break;
+            case 11:
+                sleep(1200).then(() => {die.src = 'dice/d12/eleven.jpg'});
+                break;
+            case 12:
+                sleep(1200).then(() => {die.src = 'dice/d12/twelve.jpg'});
+                break;
+        }
+        return;
+    }
+    else if(document.getElementById('d20').style.backgroundColor === 'antiquewhite'){
+        let answer = Math.floor(Math.random() * 20) + 1;
         let die = document.getElementById('die2');
         switch(answer){
             case 1:
@@ -378,6 +529,7 @@ function otherRoll(){
                 sleep(1200).then(() => {die.src = 'dice/d20/twenty.jpg'});
                 break;
         }
+        return;
     }
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
