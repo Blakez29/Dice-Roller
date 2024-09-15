@@ -8,7 +8,7 @@
 </head>
 <body>
     <header id="title">
-        <img id="logo" src="https://lowendbox.com/wp-content/uploads/2023/10/bg3.png" />
+        <img id="logo" src="misc/bg3.webp" />
         <h1 id="text">Dice Roller</h1>
     </header>
     <nav>
@@ -17,7 +17,10 @@
         <button id="otherButt" onclick="otherDice()">Other Dice</button>
     </nav>
     <div id="custom">
-        <center><button onclick="customChar()">Customize Character</button></center>
+        <div id="button.container">
+            <center><button id= "customButt" onclick="customChar()">Customize Character</button></center>
+        </div>
+        <center><p id="dark">DARK URGE</p></center>
         <p id="race">Race: ???</p>
         <p id="subrace">Subrace: ???</p>
         <p id="body">Body Type: ???</p>
@@ -31,7 +34,7 @@
         <input type="number" name="min" id="min" min="1" max="20">
     </div>
     <div>
-        <img id="arrow" src="https://www.freeiconspng.com/uploads/white-down-arrow-png-2.png">
+        <img id="arrow" src="misc/white-arrow-png-41944.png">
         <figure>
             <figcaption id="cap">Roll to start</figcaption>
             <img id="die" src="dice/d20/twenty.jpg">
