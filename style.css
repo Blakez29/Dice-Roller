@@ -21,6 +21,9 @@ button{
         background-color: black;
         color:red;
     }
+    span{
+        display: none;
+    }
 }
 span{
     font-size: 40px;
@@ -36,20 +39,11 @@ span{
     margin:0;
 }
 
-#text{
-    background: none;
-}
 
 #logo{
     max-height: 200px;
 }
 
-#text{
-    align-self:center;
-    font-size: 40px;
-    position: absolute;
-    margin-left: 160px;
-}
 
 #arrow{
     height: 50px;
