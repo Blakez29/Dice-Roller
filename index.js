@@ -102,48 +102,32 @@ function clearOut(){
     document.getElementById('die').src = 'dice/d20/twenty.jpg';
 }
 
-function customChar(){
-    if(Math.random() < 0.2){
-        document.getElementById('custom').style.backgroundColor = 'black';
-        document.getElementById('race').style.backgroundColor = 'black';
-        document.getElementById('subrace').style.backgroundColor = 'black';
-        document.getElementById('class').style.backgroundColor = 'black';
-        document.getElementById('subclass').style.backgroundColor = 'black';
-        document.getElementById('backG').style.backgroundColor = 'black';
-        document.getElementById('body').style.backgroundColor = 'black';
-        document.getElementById('customButt').style.backgroundColor = 'black';
-        document.getElementById('race').style.color = 'red'; 
-        document.getElementById('subrace').style.color = 'red';
-        document.getElementById('class').style.color = 'red';
-        document.getElementById('subclass').style.color = 'red';
-        document.getElementById('backG').style.color = 'red';
-        document.getElementById('body').style.color = 'red';
-        document.getElementById('customButt').style.color = 'red';
-        document.getElementById('dark').style.display = 'block';
-    }else{
-        document.getElementById('custom').style.backgroundColor = 'rgba(47,57,67,255)';
-        document.getElementById('race').style.backgroundColor = 'rgba(47,57,67,255)';
-        document.getElementById('subrace').style.backgroundColor = 'rgba(47,57,67,255)';
-        document.getElementById('class').style.backgroundColor = 'rgba(47,57,67,255)';
-        document.getElementById('subclass').style.backgroundColor = 'rgba(47,57,67,255)';
-        document.getElementById('backG').style.backgroundColor = 'rgba(47,57,67,255)';
-        document.getElementById('body').style.backgroundColor = 'rgba(47,57,67,255)';
-        document.getElementById('customButt').style.backgroundColor = 'rgba(47,57,67,255)';
-        document.getElementById('race').style.color = 'antiquewhite'; 
-        document.getElementById('subrace').style.color = 'antiquewhite';
-        document.getElementById('class').style.color = 'antiquewhite';
-        document.getElementById('subclass').style.color = 'antiquewhite';
-        document.getElementById('backG').style.color = 'antiquewhite';
-        document.getElementById('body').style.color = 'antiquewhite';
-        document.getElementById('customButt').style.color = 'antiquewhite';
-        document.getElementById('dark').style.display = 'none';
-    }
+function clearChar(){
+    document.body.className = 'default';
+    document.getElementById('customButt').style.display = 'block';
+    document.getElementById('customClear').style.display = 'none';
     document.getElementById('race').innerHTML = `Race: ???`
     document.getElementById('subrace').innerHTML = `Subrace: ???`
     document.getElementById('class').innerHTML = `Class: ???`
     document.getElementById('subclass').innerHTML = `Subclass: ???`
     document.getElementById('backG').innerHTML = `Background: ???`
     document.getElementById('body').innerHTML = `Body Type: ???`
+    document.getElementById('logo').src = 'misc/bg3.png';
+    document.getElementById('dark').style.display = 'none';
+}
+
+function customChar(){
+    document.getElementById('customButt').style.display = 'none';
+    let x = Math.random();
+    let urge = x < 12;
+    if(urge){
+        document.body.className = 'darkUrge';
+        document.getElementById('logo').src = 'misc/dark.png';
+        document.getElementById('dark').style.display = 'block';
+    }else{
+        document.body.className = 'default';
+        document.getElementById('dark').style.display = 'none';
+    }
     raceArr = ['Elf', 'Tiefling', 'Drow', 'Human', 'Githyanki', 'Dwarf', 'Half-Elf', 'Halfing', 'Gnome', 'Dragonborn', 'Half-Orc']
     bodyArr = [['Male 1', 'Female 1', 'Male 2', 'Female 2'],
              ['Male 1', 'Female 1', 'Male 2', 'Female 2'],
@@ -193,8 +177,17 @@ function customChar(){
     sleep(2500).then(() => {document.getElementById('subclass').innerHTML = `Subclass: ${subclassArr[class_][subclass]}`});
 
     backArr = ['Acolyte', 'Charlatan', 'Criminal', 'Entertainer', 'Folk Hero', 'Guild Artisan', 'Noble', 'Outlander', 'Sage', 'Soldier', 'Urchin'];
-    back = Math.floor(Math.random() * backArr.length);
-    sleep(3000).then(() => {document.getElementById('backG').innerHTML = `Background: ${backArr[back]}`});
+    
+    
+    sleep(3000).then(() => {
+        if(urge){
+            document.getElementById('backG').innerHTML = `Background: The Haunted One`;
+        }else{
+            back = Math.floor(Math.random() * backArr.length);
+            document.getElementById('backG').innerHTML = `Background: ${backArr[back]}`
+        }});
+
+        sleep(3000).then(() => {document.getElementById('customClear').style.display = 'block'})  
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
       }
@@ -204,6 +197,7 @@ function choiceRoll(){
     document.getElementById('custom').style.display = 'none';
     document.getElementById('other').style.display = 'none';
     document.getElementById('choice').style.display = 'block';
+    document.getElementById('minMax').style.display = 'inline-flex';
     document.getElementById('choiceButt').style.backgroundColor = 'antiquewhite';
     document.getElementById('choiceButt').style.color = 'black';
     document.getElementById('randomButt').style.backgroundColor = 'rgba(47,57,67,255)';

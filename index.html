@@ -6,10 +6,10 @@
     <title>BG Dice Roll</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<center><body>
     <header id="title">
-        <img id="logo" src="misc/bg3.webp" />
-        <h1 id="text">Dice Roller</h1>
+        <img id="logo" src="misc/bg3.png" />
+        <span>Randomizer</span>
     </header>
     <nav>
         <button id="choiceButt" onclick="choiceRoll()">Choice Roll</button>
@@ -19,6 +19,7 @@
     <div id="custom">
         <div id="button.container">
             <center><button id= "customButt" onclick="customChar()">Customize Character</button></center>
+            <center><button id= "customClear" onclick="clearChar()">Clear</button></center>
         </div>
         <center><p id="dark">DARK URGE</p></center>
         <p id="race">Race: ???</p>
@@ -29,29 +30,34 @@
         <p id="backG">Background: ???</p>
     </div>
     <div id="choice">
-    <div>
-        <label for="min">Min: </label>
-        <input type="number" name="min" id="min" min="1" max="20">
-    </div>
-    <div>
-        <img id="arrow" src="misc/white-arrow-png-41944.png">
-        <figure>
-            <figcaption id="cap">Roll to start</figcaption>
-            <img id="die" src="dice/d20/twenty.jpg">
-        </figure>
-        
-    </div>
-    <div>
-        <label for="max">Max: </label>
-        <input type="number" name="max" id="max" min="1" max="20">
-    </div>
-    <br>
-    <div id="roll">
-        <button onclick="diceRoll()">ROLL</button>
-    </div>
-    <div id="clear">
-        <button onclick="clearOut()">CLEAR</button>
-    </div>
+        <div id="minMax">
+            <div id="values">
+                <div>
+                    <label for="min">Min: </label>
+                    <input type="number" name="min" id="min" min="1" max="20">
+                </div>
+                <div>
+                    <img id="arrow" src="misc/white-arrow-png-41944.png">
+                </div>
+                <div>
+                    <label for="max">Max: </label>
+                    <input type="number" name="max" id="max" min="1" max="20">
+                </div>
+            </div>
+            <div>
+                <figure>
+                    <figcaption id="cap">Roll to start</figcaption>
+                    <img id="die" src="dice/d20/twenty.jpg">
+                </figure>
+            </div>
+        </div>
+        <br>
+        <div id="roll">
+            <button onclick="diceRoll()">ROLL</button>
+        </div>
+        <div id="clear">
+            <button onclick="clearOut()">CLEAR</button>
+        </div>
     </div>
     <div id="other">
         <h1 id="otherTitle">Roll to Start</h1>
@@ -69,5 +75,5 @@
         <button id="roll2" onclick="otherRoll()">ROLL</button>
     </div>
     <script src="./index.js" defer></script>
-</body>
+</body></center>
 </html>
