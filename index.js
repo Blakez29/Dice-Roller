@@ -1,3 +1,4 @@
+let dieNum = 0;
 function diceRoll(){
     let die = document.getElementById('die');
     let min = document.getElementById('min').value;
@@ -231,103 +232,37 @@ function otherDice(){
 }
 
 function dFour(){
-    document.getElementById('d4').style.backgroundColor = 'antiquewhite';
-    document.getElementById('d4').style.color = 'black';
-    document.getElementById('d6').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d6').style.color = 'antiquewhite';
-    document.getElementById('d8').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d8').style.color = 'antiquewhite';
-    document.getElementById('d10').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d10').style.color = 'antiquewhite';
-    document.getElementById('d12').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d12').style.color = 'antiquewhite';
-    document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d20').style.color = 'antiquewhite';
+    dieNum = 4;
     document.getElementById('die2').src = 'dice/d4/four.jpg'
     document.getElementById('die2').style.visibility = 'visible';
 }
 
 function dSix(){
-    document.getElementById('d6').style.backgroundColor = 'antiquewhite';
-    document.getElementById('d6').style.color = 'black';
-    document.getElementById('d4').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d4').style.color = 'antiquewhite';
-    document.getElementById('d8').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d8').style.color = 'antiquewhite';
-    document.getElementById('d10').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d10').style.color = 'antiquewhite';
-    document.getElementById('d12').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d12').style.color = 'antiquewhite';
-    document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d20').style.color = 'antiquewhite';
+    dieNum = 6;
     document.getElementById('die2').style.visibility = 'visible';
     document.getElementById('die2').src = 'dice/d6/six.jpg'
 }
 
 function dEight(){
-    document.getElementById('d8').style.backgroundColor = 'antiquewhite';
-    document.getElementById('d8').style.color = 'black';
-    document.getElementById('d6').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d6').style.color = 'antiquewhite';
-    document.getElementById('d4').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d4').style.color = 'antiquewhite';
-    document.getElementById('d10').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d10').style.color = 'antiquewhite';
-    document.getElementById('d12').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d12').style.color = 'antiquewhite';
-    document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d20').style.color = 'antiquewhite';
+    dieNum = 8;
     document.getElementById('die2').style.visibility = 'visible';
     document.getElementById('die2').src = 'dice/d8/eight.jpg'
 }
 
 function dTen(){
-    document.getElementById('d10').style.backgroundColor = 'antiquewhite';
-    document.getElementById('d10').style.color = 'black';
-    document.getElementById('d6').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d6').style.color = 'antiquewhite';
-    document.getElementById('d8').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d8').style.color = 'antiquewhite';
-    document.getElementById('d4').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d4').style.color = 'antiquewhite';
-    document.getElementById('d12').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d12').style.color = 'antiquewhite';
-    document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d20').style.color = 'antiquewhite';
+    dieNum = 10;
     document.getElementById('die2').style.visibility = 'visible';
     document.getElementById('die2').src = 'dice/d10/ten.jpg'
 }
 
 function dTwelve(){
-    document.getElementById('d12').style.backgroundColor = 'antiquewhite';
-    document.getElementById('d12').style.color = 'black';
-    document.getElementById('d6').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d6').style.color = 'antiquewhite';
-    document.getElementById('d8').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d8').style.color = 'antiquewhite';
-    document.getElementById('d10').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d10').style.color = 'antiquewhite';
-    document.getElementById('d4').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d4').style.color = 'antiquewhite';
-    document.getElementById('d20').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d20').style.color = 'antiquewhite';
+    dieNum = 12;
     document.getElementById('die2').style.visibility = 'visible';
     document.getElementById('die2').src = 'dice/d12/twelve.jpg'
 }
 
 function dTwenty(){
-    document.getElementById('d20').style.backgroundColor = 'antiquewhite';
-    document.getElementById('d20').style.color = 'black';
-    document.getElementById('d6').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d6').style.color = 'antiquewhite';
-    document.getElementById('d8').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d8').style.color = 'antiquewhite';
-    document.getElementById('d10').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d10').style.color = 'antiquewhite';
-    document.getElementById('d12').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d12').style.color = 'antiquewhite';
-    document.getElementById('d4').style.backgroundColor = 'rgba(47,57,67,255)';
-    document.getElementById('d4').style.color = 'antiquewhite';
+    dieNum = 20;
     document.getElementById('die2').style.visibility = 'visible';
     document.getElementById('die2').src = 'dice/d20/twenty.jpg'
 }
@@ -338,7 +273,7 @@ function otherRoll(){
     sleep(800).then(() => {document.getElementById('otherTitle').innerHTML = 'Rolling...';});
     sleep(1200).then(() => {document.getElementById('otherTitle').innerHTML = 'Done!';});
     
-    if(document.getElementById('d4').style.backgroundColor === 'antiquewhite'){
+    if(dieNum === 4){
         let answer = Math.floor(Math.random() * 4) + 1;
         let die = document.getElementById('die2');
         switch(answer){
@@ -357,7 +292,7 @@ function otherRoll(){
     }
     return;
     }
-    else if(document.getElementById('d6').style.backgroundColor === 'antiquewhite'){
+    else if(dieNum === 6){
         let answer = Math.floor(Math.random() * 6) + 1;
         let die = document.getElementById('die2');
         switch(answer){
@@ -382,7 +317,7 @@ function otherRoll(){
         } 
         return;
     }
-    else if(document.getElementById('d8').style.backgroundColor === 'antiquewhite'){
+    else if(dieNum === 8){
         let answer = Math.floor(Math.random() * 8) + 1;
         let die = document.getElementById('die2');
         switch(answer){
@@ -413,7 +348,7 @@ function otherRoll(){
         }
         return;
     }
-    else if(document.getElementById('d10').style.backgroundColor === 'antiquewhite'){
+    else if(dieNum === 10){
         let answer = Math.floor(Math.random() * 10) + 1;
         let die = document.getElementById('die2');
         switch(answer){
@@ -450,7 +385,7 @@ function otherRoll(){
         }
         return;
     }
-    else if(document.getElementById('d12').style.backgroundColor === 'antiquewhite'){
+    else if(dieNum === 12){
         let answer = Math.floor(Math.random() * 12) + 1;
         let die = document.getElementById('die2');
         switch(answer){
@@ -493,7 +428,7 @@ function otherRoll(){
         }
         return;
     }
-    else if(document.getElementById('d20').style.backgroundColor === 'antiquewhite'){
+    else if(dieNum === 20){
         let answer = Math.floor(Math.random() * 20) + 1;
         let die = document.getElementById('die2');
         switch(answer){
