@@ -120,7 +120,7 @@ function clearChar(){
 function customChar(){
     document.getElementById('customButt').style.display = 'none';
     let x = Math.random();
-    let urge = x < 1.2;
+    let urge = x < 0.2;
     if(urge){
         document.body.className = 'darkUrge';
         document.getElementById('logo').src = 'misc/Dark.png';
