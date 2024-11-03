@@ -5,6 +5,11 @@ body{
     background-color: rgba(47,57,67,255);
     color:antiquewhite;
 }
+button{
+    background-color: rgba(47,57,67,255);
+    color:antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .default{
     background-color: rgba(47,57,67,255);
     color:antiquewhite;
@@ -15,9 +20,6 @@ body{
     button{
         background-color: black;
         color:red;
-    }
-    nav{
-        background-color: black;
     }
 }
 span{
@@ -130,9 +132,4 @@ nav button{
 
 #customClear{
     display:none;
-}
-button{
-    background-color: rgba(47,57,67,255);
-    color:antiquewhite;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
