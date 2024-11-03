@@ -119,10 +119,10 @@ function clearChar(){
 function customChar(){
     document.getElementById('customButt').style.display = 'none';
     let x = Math.random();
-    let urge = x < 12;
+    let urge = x < 1;
     if(urge){
         document.body.className = 'darkUrge';
-        document.getElementById('logo').src = 'misc/dark.png';
+        document.getElementById('logo').src = 'misc/Dark.png';
         document.getElementById('dark').style.display = 'block';
     }else{
         document.body.className = 'default';
