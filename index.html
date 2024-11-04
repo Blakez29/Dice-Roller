@@ -6,7 +6,7 @@
     <title>BG Dice Roll</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<center><body>
+<center><body onclick="playMusic()">
     <header id="title">
         <img id="logo" src="misc/bg3.png" />
         <span id="text">Randomizer</span>
@@ -74,6 +74,10 @@
         <br>
         <button id="roll2" onclick="otherRoll()">ROLL</button>
     </div>
+    <br>
+    <audio controls id = "music" loop="loop">
+        <source src="music/river.mp3" type="audio/mpeg">
+    </audio>
     <script src="./index.js" defer></script>
 </body></center>
 </html>
