@@ -103,11 +103,6 @@ function clearOut(){
     document.getElementById('die').src = 'dice/d20/twenty.png';
 }
 
-function playMusic(){
-    x = document.getElementById("music");
-    x.play();
-}
-
 function clearChar(){
     if(document.getElementById('dark').style.display == 'block'){
         document.getElementById("music").src="music/river.mp3";
@@ -129,7 +124,7 @@ function clearChar(){
 function customChar(){
     document.getElementById('customButt').style.display = 'none';
     let x = Math.random();
-    let urge = x < 1.2;
+    let urge = x < 0.2;
     if(urge){
         document.getElementById("music").src="music/bhaal.mp3";
         document.body.className = 'darkUrge';
